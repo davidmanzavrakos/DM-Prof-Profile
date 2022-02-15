@@ -1,82 +1,190 @@
-:root {
-    -primary-color: maroon;
-    -secondary-color: gold;
-    -tertiary-color: black
-}
+/* General */
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+    :root {
+        -primary-color: maroon;
+        -secondary-color: gold;
+        -tertiary-color: black
+    }
 
-body {
-    color: var(--primary-color);
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: blue
-}
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        color: var(--primary-color);
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: blue
+    }
+
+/* End of General */
 
 /* Header and Navigation Bar Styling */
 
-header {
-    padding: 20px 25px;
-    background-color: var(--primary-color);
+    header {
+        padding: 20px 25px;
+        background-color: var(--primary-color);
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        position: sticky;
+        top: 0;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        background-position: 80%;
+        z-index: 9999;
+    }
+
+    header h1 {
+        background-color: var(-secondary-color);
+        font-weight: bold;
+        text-align: right;
+        width: 350px;
+        position: relative;
+        margin: 0;
+        right: 35px;
+        padding: 20px;
+        text-shadow: 0 0 10px rgba (100, 200, 250, 0.50);
+    }
+
+    header h1 a {
+        text-decoration: none;
+        color: var(--primary-color);
+        font-size: 36px;
+    }
+
+    header nav {
+        margin: 7px 0;
+    }
+
+    header nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        list-style: none;
+        padding: 20px 10px;
+        border-spacing: 10px;
+    }
+
+    header nav ul li a {
+        padding: 10px 15px;
+        font-weight: lighter;
+        font-size: 1.55vw;
+        text-shadow: 0 0 10px rgba(0, 35, 88, 0.4);
+        text-decoration-line: underline;
+        color: var(--secondary-color);
+    }
+
+    header nav ul li a:hover {
+        background: var(--primary-color);
+        color: var(--tertiary-color);
+        border-radius: 15px;
+        text-shadow: none;
+    }
+
+/* end of header and navigation bar sytle */
+
+/* hero section */
+
+    .hero {
+        background-image: url("../images/hero.jpg");
+        background-size: cover;
+        background-position: 80%;
+        height: 250px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        position: relative;
+    }
+
+    .hero h2 {
+        position: absolute;
+        bottom: 30px;
+        left: 100px;
+        text-align: center;
+        font-style: italic;
+        font-size: 20px;
+        text-shadow: 0 0 5px rgba(41, 33, 33, 0.5);
+        color: var(--tertiary-color);
+    }
+
+    .hero-image {
+        position: absolute;
+        bottom: 0px;
+        right: 100px;
+    }
+
+/* End Hero Styles */
+
+/* all section */
+
+section { 
+    padding: 60px;
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
-    position: sticky;
-    top: 0;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    background-position: 80%;
-    z-index: 9999;
+    justify-content: space-between;
 }
-
-header h1 {
-    background-color: var(-secondary-color);
-    font-weight: bold;
+.section-title {
+    width: 25%;
+    font-size: 35px;
     text-align: right;
-    width: 350px;
-    position: relative;
-    margin: 0;
-    right: 35px;
-    padding: 20px;
-    text-shadow: 0 0 10px rgba (100, 200, 250, 0.50);
+    padding: 5px 5px;
 }
 
-header h1 a {
-    text-decoration: none;
-    color: var(--primary-color);
-    font-size: 36px;
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 75%;
+    border-left: 5px solid var(--primary-color);
+    margin: 10px 0;
+    padding: 20px 20px;
 }
-  
-header nav {
-    margin: 7px 0;
+
+  /*About Me Section */
+
+#aboutme-body {
+    color: var(--secondary-color);
 }
-  
-header nav ul {
+
+  /* End of About Me */
+
+  /* Contact Me */
+
+#contactinfo ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     list-style: none;
-    padding: 20px 10px;
-    border-spacing: 10px;
 }
-  
-header nav ul li a {
-    padding: 10px 15px;
+
+#contactinfo ul li {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px 20px;
     font-weight: lighter;
+    text-align: center;
     font-size: 1.55vw;
-    text-shadow: 0 0 10px rgba(0, 35, 88, 0.4);
-    text-decoration-line: underline;
+    border-bottom: 3px solid var(--primary-color);
+}
+
+#contactinfo li{
+    text-decoration: none;
+    margin: 10px 20px 50px 0;
+}
+
+#contactinfo a {
+    text-decoration: none;
+    color: var(--primary-color)
+}
+
+#contactinfo a:hover {
     color: var(--secondary-color);
-}
-  
-header nav ul li a:hover {
-    background: var(--primary-color);
-    color: var(--tertiary-color);
     border-radius: 15px;
-    text-shadow: none;
-}
+
+  /* End of Contact Me Section */
