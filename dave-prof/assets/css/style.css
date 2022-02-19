@@ -38,13 +38,12 @@
     header h1 {
         background-color: var(--secondary-color);
         font-weight: bold;
-        text-align: right;
+        text-align: center;
         width: 350px;
         position: relative;
         margin: 0;
-        right: 35px;
         padding: 20px;
-        border-radius: 20px;
+        border-radius: 10px;
         text-shadow: 0 0 10px rgba (100, 200, 250, 0.50);
     }
 
@@ -71,7 +70,7 @@
     header nav ul li a {
         padding: 10px 15px;
         font-weight: lighter;
-        font-size: 1.55vw;
+        font-size: 30px;
         text-shadow: 0 0 10px rgba(0, 35, 88, 0.4);
         text-decoration-line: underline;
         color: var(--secondary-color);
@@ -79,8 +78,8 @@
 
     header nav ul li a:hover {
         background: var(--primary-color);
-        color: var(--tertiary-color);
-        border-radius: 15px;
+        color: var(--quaternary-color);
+        border-radius: 10px;
         text-shadow: none;
     }
 /* End Header Style */
@@ -113,17 +112,6 @@
         font-size: 24px;
         line-height: 1.5;
     }
-
-    .hero-image {
-        flex: content;
-    }
-
-    .hero-image img {
-        width: 150px;
-        height: auto;
-        border-radius: 15px;
-        float: right;
-    }
 /* End Hero Style */
 
 /* Start Footer Style */
@@ -132,7 +120,7 @@
         width: 100%;
         padding: 20px 50px;
         display: flex;
-        justify-content: space-between;
+        justify-content: right;
         flex-wrap: wrap;
     }
 
@@ -180,8 +168,15 @@
         padding: 20px 20px;
     }
 
-    #aboutme-body {
-        color: var(--tertiary-color);
+    .aboutme-image {
+        flex: content;
+    }
+
+    .aboutme-image img {
+        width: 150px;
+        height: auto;
+        border-radius: 15px;
+        float: right;
     }
 /* End About Me */
 
@@ -275,12 +270,13 @@
         font-weight: lighter;
         text-align: center;
         font-size: 1.55vw;
-        border-bottom: 3px solid var(--primary-color);
+        border: 4px solid var(--primary-color);
+        border-radius: 10px;
     }
 
     #contactinfo li{
         text-decoration: none;
-        margin: 10px 20px 50px 0;
+        margin: 10px 50px 10px 0;
     }
 
     #contactinfo a {
