@@ -1,5 +1,4 @@
 /* General */
-
     :root {
         --primary-color: maroon;
         --secondary-color: gold;
@@ -18,11 +17,9 @@
         font-family: Arial, Helvetica, sans-serif;
         background-color: white
     }
-
 /* End of General */
 
-/* Header and Navigation Bar Styling */
-
+/* Start Header Style */
     header {
         padding: 20px 25px;
         background-color: var(--primary-color);
@@ -86,8 +83,7 @@
         border-radius: 15px;
         text-shadow: none;
     }
-
-/* end of header and navigation bar sytle */
+/* End Header Style */
 
 /* Hero Section */
     .hero {
@@ -124,6 +120,35 @@
         right: 100px;
     }
 /* End Hero Style */
+
+/*-----Footer-----*/
+
+    footer {
+        background: var(--quaternary-color);
+        width: 100%;
+        padding: 20px 50px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    footer h2 {
+        color: var(--primary-color);
+        font-size: 30px;
+        margin: 0;
+    }
+
+    footer h3 {
+        line-height: 1.5;
+        text-align: right;
+        color: white;
+    }
+
+    .footer-content {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
 
 /* Start Style About Me */
     section { 
