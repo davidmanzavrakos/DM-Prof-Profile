@@ -90,173 +90,171 @@
 /* end of header and navigation bar sytle */
 
 /* Hero Section */
-.hero {
-    background-image:url(/Users/z076218/Desktop/projects/dave-prof/assets/images/Glacier.JPG);
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    background-attachment: fixed;
-    background-position: 80%;
-}
+    .hero {
+        background-image:url(/Users/z076218/Desktop/projects/dave-prof/assets/images/Glacier.JPG);
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        background-attachment: fixed;
+        background-position: 80%;
+    }
 
-.hero-text h2 {
-    font-style: normal;
-    font-size: 60px;
-    text-align: left;
-    color: var(--secondary-color);
-}
+    .hero-text h2 {
+        font-style: normal;
+        font-size: 60px;
+        text-align: left;
+        color: var(--secondary-color);
+    }
 
-.hero-text {
-    width: 80%;
-    text-align: center;
-    margin: 3.5%;
-    color: white;
-    font-size: 24px;
-    line-height: 1.5;
-}
+    .hero-text {
+        width: 80%;
+        text-align: left;
+        margin: 3.5%;
+        color: white;
+        font-size: 24px;
+        line-height: 1.5;
+    }
 
-.hero-image {
-    position: absolute;
-    bottom: 0px;
-    right: 100px;
-}
+    .hero-image {
+        position: absolute;
+        bottom: 0px;
+        right: 100px;
+    }
+/* End Hero Style */
 
 /* Start Style About Me */
+    section { 
+        padding: 60px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
 
-section { 
-    padding: 60px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
+    .section-title {
+        width: 25%;
+        font-size: 35px;
+        text-align: right;
+        padding: 5px 5px;
+    }
 
-.section-title {
-    width: 25%;
-    font-size: 35px;
-    text-align: right;
-    padding: 5px 5px;
-}
+    .content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        width: 75%;
+        border-left: 5px solid var(--primary-color);
+        margin: 10px 0;
+        padding: 20px 20px;
+    }
 
-.content {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    width: 75%;
-    border-left: 5px solid var(--primary-color);
-    margin: 10px 0;
-    padding: 20px 20px;
-}
+    #aboutme-body {
+        color: var(--tertiary-color);
+    }
+/* End About Me */
 
-#aboutme-body {
-    color: var(--tertiary-color);
-}
+/* Start Works Sytles */
 
-  /* End About Me */
+    .app {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        margin: 10px;
+        border: 5px solid var(--secondary-color);
+        position: relative;
+        width: 475px;
+        box-shadow: 0 0 10px rgb(0 0 0 50%);
+    }
 
-  /* Start Works Sytles */
+    .app img {
+        display: block;
+        width: 100%;
+        border-radius: 7px;
+    }
 
-.app {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    margin: 10px;
-    border: 5px solid var(--secondary-color);
-    position: relative;
-    width: 475px;
-    box-shadow: 0 0 10px rgb(0 0 0 50%);
-}
+    .app-detail {
+        width: 100%;
+        height:10px;
+        position: absolute;
+        text-align: center;
+        left: 0px;
+        bottom: 0px; 
+        margin: 0;
+        padding: 30px 5px;
+        opacity: .75;
+        background-color: white;
+    }
 
-.app img {
-    display: block;
-    width: 100%;
-    border-radius: 7px;
-}
+    #app-1 {
+        display: block;
+        width: 100%;
+        border-radius: 10px;
+        padding: 0;  
+    }
 
-.app-detail {
-    width: 100%;
-    height:10px;
-    position: absolute;
-    text-align: center;
-    left: 0px;
-    bottom: 0px; 
-    margin: 0;
-    padding: 30px 5px;
-    opacity: .75;
-    background-color: white;
-}
+    #app-2, #app-3, #app-4 {
+        display: block;
+        width: 45%;
+        border-radius: 10px;
+        padding: 0px;
+        
+    }
 
-#app-1 {
-    display: block;
-    width: 100%;
-    border-radius: 10px;
-    padding: 0;  
-}
+    .app h3 {
+        position: absolute;
+        height: 5px;
+    }
 
-#app-2, #app-3, #app-4 {
-    display: block;
-    width: 45%;
-    border-radius: 10px;
-    padding: 0px;
-    
-}
+    .app img:hover{
+        opacity: .75;
+    }
 
-.app h3 {
-    position: absolute;
-    height: 5px;
-}
-
-.app img:hover{
-    opacity: .75;
-}
-
-.app-info {
-    width: 100%;
-    height:10px;
-    position: absolute;
-    text-align: center;
-    left: 0px;
-    bottom: 0px; 
-    margin: 0;
-    padding: 30px 5px;
-    opacity: .75;
-    background-color: white;
-}
-
+    .app-info {
+        width: 100%;
+        height:10px;
+        position: absolute;
+        text-align: center;
+        left: 0px;
+        bottom: 0px; 
+        margin: 0;
+        padding: 30px 5px;
+        opacity: .75;
+        background-color: white;
+    }
 /* End of Work Sytles */
 
 /* Start Contact Style */
+    #contactinfo ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        list-style: none;
+    }
 
-#contactinfo ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    list-style: none;
-}
+    #contactinfo ul li {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 10px 20px;
+        font-weight: lighter;
+        text-align: center;
+        font-size: 1.55vw;
+        border-bottom: 3px solid var(--primary-color);
+    }
 
-#contactinfo ul li {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 10px 20px;
-    font-weight: lighter;
-    text-align: center;
-    font-size: 1.55vw;
-    border-bottom: 3px solid var(--primary-color);
-}
+    #contactinfo li{
+        text-decoration: none;
+        margin: 10px 20px 50px 0;
+    }
 
-#contactinfo li{
-    text-decoration: none;
-    margin: 10px 20px 50px 0;
-}
+    #contactinfo a {
+        text-decoration: none;
+        color: var(--primary-color)
+    }
 
-#contactinfo a {
-    text-decoration: none;
-    color: var(--primary-color)
-}
-
-#contactinfo a:hover {
-    color: var(--secondary-color);
-    border-radius: 15px;
+    #contactinfo a:hover {
+        color: var(--secondary-color);
+        border-radius: 15px;
+/* End Contact Sytle */
