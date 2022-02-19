@@ -3,7 +3,7 @@
         --primary-color: maroon;
         --secondary-color: gold;
         --tertiary-color: black;
-        --quaternary-color: blue;
+        --quaternary-color: white;
     }
 
     * {
@@ -115,16 +115,20 @@
     }
 
     .hero-image {
-        position: absolute;
-        bottom: 0px;
-        right: 100px;
+        flex: content;
+    }
+
+    .hero-image img {
+        width: 150px;
+        height: auto;
+        border-radius: 15px;
+        float: right;
     }
 /* End Hero Style */
 
-/*-----Footer-----*/
-
+/* Start Footer Style */
     footer {
-        background: var(--quaternary-color);
+        background: var(--primary-color);
         width: 100%;
         padding: 20px 50px;
         display: flex;
@@ -133,7 +137,7 @@
     }
 
     footer h2 {
-        color: var(--primary-color);
+        color: var(--secondary-color);
         font-size: 30px;
         margin: 0;
     }
@@ -149,6 +153,7 @@
         justify-content: space-between;
         flex-wrap: wrap;
     }
+/* End Footer Style */
 
 /* Start Style About Me */
     section { 
@@ -181,6 +186,10 @@
 /* End About Me */
 
 /* Start Works Sytles */
+
+    .works {
+        background: gold;
+    }
 
     .app {
         display: flex;
