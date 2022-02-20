@@ -1,4 +1,4 @@
-/* General */
+/* Start of General */
     :root {
         --primary-color: maroon;
         --secondary-color: gold;
@@ -19,7 +19,7 @@
     }
 /* End of General */
 
-/* Start Header Style */
+/* Start Header Styles */
     header {
         padding: 20px 25px;
         background-color: var(--primary-color);
@@ -82,9 +82,9 @@
         border-radius: 10px;
         text-shadow: none;
     }
-/* End Header Style */
+/* End Header Styles */
 
-/* Hero Section */
+/* Hero Section Styles */
     .hero {
         background-image:url(/Users/z076218/Desktop/projects/dave-prof/assets/images/Glacier.JPG);
         background-size: cover;
@@ -112,9 +112,9 @@
         font-size: 24px;
         line-height: 1.5;
     }
-/* End Hero Style */
+/* End Hero Styles */
 
-/* Start Footer Style */
+/* Start Footer Styles */
     footer {
         background: var(--primary-color);
         width: 100%;
@@ -141,9 +141,9 @@
         justify-content: space-between;
         flex-wrap: wrap;
     }
-/* End Footer Style */
+/* End Footer Styles */
 
-/* Start Style About Me */
+/* Start About Me Styles */
     section { 
         padding: 60px;
         display: flex;
@@ -178,29 +178,34 @@
         border-radius: 15px;
         float: right;
     }
-/* End About Me */
+/* End About Me Styles*/
 
 /* Start Works Sytles */
-
     .works {
         background: gold;
     }
 
-    .app {
+    .content {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;
+    }
+
+    .main-app {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: right;
         margin: 10px;
         border: 5px solid var(--secondary-color);
         position: relative;
-        width: 475px;
+        width: auto;
         box-shadow: 0 0 10px rgb(0 0 0 50%);
     }
 
-    .app img {
-        display: block;
+    .main-app img {
+        display: inline-block;
         width: 100%;
-        border-radius: 7px;
+        border-radius: 10px;
     }
 
     .app-detail {
@@ -216,29 +221,59 @@
         background-color: white;
     }
 
+    .app2 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: right;
+        margin: 10px;
+        border: 5px solid var(--secondary-color);
+        position: relative;
+        float: right;
+        width: 475px;
+        box-shadow: 0 0 10px rgb(0 0 0 50%);
+    }
+    .app2 img {
+        display: block;
+        width: 75%;
+        border-radius: 10px;
+    }
+    
+    .app2-detail {
+        width: 75%;
+        height:10px;
+        position: absolute;
+        text-align: center;
+        left: 0px;
+        bottom: 0px; 
+        margin: 0;
+        padding: 30px 5px;
+        opacity: .75;
+        background-color: white;
+    }
+    
+    .app img:hover{
+        opacity: .75;
+    }
+
+
     #app-1 {
         display: block;
         width: 100%;
         border-radius: 10px;
-        padding: 0;  
     }
 
     #app-2, #app-3, #app-4 {
         display: block;
         width: 45%;
-        border-radius: 10px;
-        padding: 0px;
-        
+        border-radius: 10px;        
     }
 
     .app h3 {
-        position: absolute;
+        position: relative;
         height: 5px;
     }
 
-    .app img:hover{
-        opacity: .75;
-    }
+
 
     .app-info {
         width: 100%;
